@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Módulos de Typescript
+    </title>
+</head>
+
+<body>
+    Esta es una página HTML
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script>
+        SystemJS.config({
+
+            packages: {
+                '/': {
+                    main: 'app',
+                    defaultExtension: 'js'
+                }
+            }
+
+        })
+        SystemJS.import('app.js');
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>

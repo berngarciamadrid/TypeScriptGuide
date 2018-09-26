@@ -1,0 +1,27 @@
+en la terminal node  tsc nombre archivo
+Modo watch
+tsc app -w o --watch
+
+tsc -init hace tsconfig.json
+tsc *.ts -w para ver todos los archivos ts
+tsc -w
+
+http://www.typescriptlang.org/docs/handbook/basic-types.html
+
+Typescript Node:
+https://www.npmjs.com/package/ts-node
+
+Crear un SourceMap:
+tsc --sourcemap nombre_archivo
+
+Incluir y Excluir Archivos:
+En el tsconfig.json
+"include":[ "app/**/*"] Por ejemplo
+"exclude":["node_modules/"]
+
+Generar outfile:
+tsc --outFile porejemplo main app app1 app2
+
+Cambiar en momento de compilación la versión de Javascript:
+tsc app.ts --target es6(o es5 o es7)
+
